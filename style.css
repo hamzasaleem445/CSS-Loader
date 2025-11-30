@@ -1,0 +1,41 @@
+h1{
+    color: green;
+    text-align: center;
+}
+
+h1:hover {
+    
+    animation: loderhov 2s ease-in 1s infinite;
+    
+}
+
+@keyframes loderhov {
+    from{
+        color: aquamarine;
+    }
+    to{
+        color: blueviolet;
+    }
+}
+
+div{
+    height: 200px;
+    width: 200px;
+    
+    border: 10px solid #ffe66d;
+    border-top: 10px solid gray;
+    border-radius: 50%;
+    position: relative;
+    top: 50px;
+    left: 150px;
+    animation: rotation 1s steps(10) 1s infinite normal;
+}
+
+@keyframes rotation {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
